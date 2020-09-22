@@ -13,7 +13,7 @@ header {
 	border-color: inherit;
 	border-width: 0px;
 	display:block;
-    background:#48c7f2 url('banner.jpg') no-repeat;
+    background:#48c7f2 url("../img/banner.jpg") no-repeat;
     padding:1px 0px;
 	margin: auto;
 	text-align: center;
@@ -29,47 +29,22 @@ header {
 	}	
 
 
-ul {
-   top: 0;
-   height: 51px; 
-   z-index: 1; 
-   width: 980px; 
-   position: relative; 
-   top: 24px; 
-   left: -12px;
- 
-   	}
-
-.menu {
- 	padding: 0;
-	margin-left:10px;
-	}
- 
-	.menu li {
- 	display: inline;
-	}
- 
-	.menu li a {
-	display: block;
- 	font-family: Montserrat;
- 	font-size: 14px;
- 	font-weight: bold;
-	text-decoration: none;
- 	float: left;
- 	padding: 15px;
- 	background-color: #f4511e;
-	border-radius: 6px;
-	width: 150px;
- 	background-image:url('btn.gif');
-	background-repeat: no-repeat;
-	background-size: 46px 46px;
+.nav {
+	margin-top: 10px; 
+	float: left;
+	background-color: #000;
 	color: #fff;
-	border: 1px solid #fff;
-	}
- 
-	.menu li a:hover {
-  	background-color: #111;
-	}
+	margin: 5px;
+	padding: 5px;
+	text-decoration: none;
+	padding: 5px;
+	border-radius: 5px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a:hover {
+	background-color: grey;
+  }
+
 	
 section {
     width: 70%;
@@ -200,14 +175,6 @@ form {
  
 select, option, textarea{
     font-family: Montserrat;
-/**    width:500px;
-    height:27px;
-    background:#666666;
-    border:2px solid #f6f6f6;
-    padding:10px;
-    margin-top:5px;
-    font-size:10px;
-    color:#ffffff;**/
 }
 
 

@@ -1,84 +1,63 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Recursos Pedagógicos</title>
+<title>R P L</title>
 <meta charset="UTF-8"/>
-<link rel="stylesheet" href="css/estilo.css">
+<script src="https://kit.fontawesome.com/f08ae26a17.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/esstilo.css">
 </head>
 <body>
 <!-- Cabecera -->
 <header>
-
-<h1>Recursos Pedagógicos<br> Libres </h1>
-        
-<nav>      
-	<a class=nav href="index.html">Inicio </a></li>
-	<a class=nav href="filosofia.html">Nuestra Filosofía</a>
-	<a class=nav href="nosotros.html">Software Libre</a>
-	<a class=nav href="metas.html">Metas</a>
-	<a class=nav style="background-color: gray;" href="repositorio.html">Repositorio</a>
-</nav>		
+        <h1>/** Recursos Pedagógicos Libres **// <span>&#160;</span></h1>
 </header>
-<body>
-<!-- Contenido -->
-<section class="cuerpo">
-<h1>Almacén de Recursos Educativos</h1>
-<div>
-	<h2>Busca recursos por materia, año, tema, o palabra clave.</h2><br>
-<form>
-	    					<div>
-		    					<label>Materias</label>
-		    					<select name="Materias" id="materia">
-		    						<option value="0" selected>-- Todas --</option>
-		    						<option value="1">Matemática</option>
-		    						<option value="2">Literatura</option>
-		    						<option value="3">Física</option>
-		    						<option value="4">Quínica</option>
-		    						<option value="5">Informática</option>
-		    						<option value="6">Biología</option>
-		    					</select>
-	    					</div>
-	    					<div>
-		    					<label>Curso</label>
-		    					<select name="año" id="año">
-		    						 <option value="0" selected>-- Todos --</option>
-	                                 <option value="3">1º Año</option>
-	                                 <option value="7">2º Año</option>
-	                                 <option value="8">3º Año</option>
-	                                 <option value="9">4ºAño</option>
-	                                 <option value="10">5º Año</option>
-	                                 <option value="11">6º Año</option>
-	                             </select>
-	    					</div>
-	    					<div>
-		    					<label>Temas</label>
-		    					<select name="proyecto" id="proyecto">
-								       <option value="0" selected>-- Todos --</option>
+        <nav id="nav">
+        <ul>
+          <li><a href="index.html">Inicio </a></li>
+          <li><a href="filosofia.html">Nuestra Filosofía</a></li>
+          <li><a href="nosotros.html">Software Libre</a></li>
+          <li><a href="metas.html">Metas</a></li>
+          <li><a style="background-color: #929fb3;"href="repositorio.html">Repositorio</a></li>          
+        </ul>
+        </nav>
 
-								         								</select>
-	    					</div>
-	    					<div>
-		    					<label>Texto</label>
-		    					<textarea id="Texto" name="mensaje" placeholder="busqueda por texto"></textarea>
-	    					</div>
-	    					<div>
-	    						<input id="buscar" name="buscar" type="submit" value="Buscar" />
-	    					</div>
-	    				</form>
-</div>
  
-</Section>
- <aside style="background-color: #fff"; border: 0px;>
-                    <img class="centro" src="img/recursos.png" alt="Recursos">
-		</aside>
-<!-- Pie de pagina -->       
+<!-- Contenido -->
+<section class="contenedor">
+	<article class="cuerpo">
+<h1>Almacén de Recursos Educativos</h1>
+
+<form action="formulario-busqueda.php" method="post">	
+	<input materia="materia" type="text" placeholder="materia" maxlength="30" pattern="[a-zA-Z0-9]+" required autofocus/>
+	<input curso="curso" type="text" placeholder="curso" maxlength="30" pattern="[a-zA-Z0-9]+" required autofocus/>
+	<input tema="tema" type="text" placeholder="tema" maxlength="30" pattern="[a-zA-Z0-9]+" required autofocus/>
+	<input name="email" type="email" placeholder="Correo electrónico" required />	
+	<textarea name="consulta" placeholder="¿Cuál es el motivo de tu consulta?" rows="6" required></textarea>
+	<button id="enviar" name="enviar" type="submit" class="btn">ENVIAR</button>
+</form>
+ 
+</article>
+<!-- Contenido relacionado-->
+<article>
+	<iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FArgentina%2FBuenos_Aires&amp;src=bWFyaW9tb3lhbm9AZ21haWwuY29t&amp;src=N3JoY29sbWRwY3V2YTFkbDU4aWE3cmNxZjRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZXNwaXJpdHVzYW50by5lZHUuYXJfY2xhc3Nyb29tMTE1ZDRmNWRAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=YjdkbXE3aTU1YzRuNXNudmVuaXU2a3FxdDhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;src=ZXNwaXJpdHVzYW50by5lZHUuYXJfYTBxaHV0cTFsZGZ1bTBjdTgxbjEyaDBqdGdAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%23039BE5&amp;color=%23C0CA33&amp;color=%230047a8&amp;color=%23E4C441&amp;color=%23A79B8E" style="border:solid 1px #777" width="255" height="600" frameborder="0" scrolling="no"></iframe>
+</article>
+</section>
+        <aside id="custom">
+                <div class="Widget">
+                        <a id="facebook" href="https://www.facebook.com/" target="_blank"></a>
+                        <a id="twitter" href="https://twitter.com/" target="_blank"></a>
+                        <a id="instagram" href="https://www.instagram.com/" target="_blank"></a>
+                        <a id="messenger" href="https://m.me/TodosLAT" target="_blank"></a>
+                        <a id="whatsapp" href="whatsapp://send?text="></a>
+                </div>
+        </aside>       
+                <!-- Pie de pagina -->
 <footer>
-	<h3> Diseño 2020 </h3>
-        </footer>
-
-
-	
-
-
+        <i class="fab fa-twitter-square fa-2x"></i>
+        <i class="fab fa-facebook-square fa-2x"></i>
+        <i class="fab fa-instagram-square fa-2x"></i>
+      
+        <h2> Derechos reservados @ 2020 </h2>
+</footer>
 </body>
 </html>

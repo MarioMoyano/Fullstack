@@ -40,11 +40,13 @@ form{
 }
 
 .cuerpo{
-	width:70%;
+	width:69%;
 	background-color:#caebf2;
     float: left;
     padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 1%;
+    margin-right: 1%;
+    margin-top:1% ;
 }
 .cuerpo h1 {
     padding: 1em;
@@ -81,11 +83,14 @@ form{
 	background-color:#7cc8e6;
     float: left;
     padding: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 1%;
+    margin-top:1% ;
+
 }
 .aside h2{
 	color:#fff;
-	font-size: 1.5em; 
+    font-size: 1.5em;
+    padding: 20px;
 	text-align: justify;
 	float: left;
     }
@@ -95,7 +100,14 @@ form{
 	text-align: justify;
     float: left;
 }
+.iframe{
+	width:30%; 
+	float: left;
+    padding:0;
+    margin-bottom: 1%;
+    margin-top:1% ;
 
+}
 /* Cuando el ancho de la pantalla desciende por debajo de 500px, entonces
 se elimina la flotacion de cajas y el ancho del contenedor baja al 90% del
 ancho del body */
@@ -106,10 +118,13 @@ ancho del body */
     }
     
     /* Si la pantalla supera los 500px, entonces se deja de flotar las cajas */
-	.cuerpo, .aside{
+	.cuerpo, .aside, .iframe{
 		float: none;
-		width:100%;
+        width:100%;
+        margin-bottom: 1%;
+        margin-top:1% ;
     }
+    
 }
 main, header, nav, footer{
 	display:block
@@ -225,14 +240,16 @@ nav.topnav ul li a {
 footer {
     position: relative;
     /* Altura total del footer en px con valor negativo */
-    margin-top: 80px;
+    margin-top: -80px;
     /* Altura del footer en px. Se han restado los 5px del margen
        superior mas los 5px del margen inferior
     */
+    width: 95%;
+    margin:auto;
     height: 70px;
-    padding:5px 0px;
+    padding:5px 5px;
     clear: both;
-    background: #286af0;
+    background: #7cc8e6;
     text-align: center;
     color: #fff;
 }  
@@ -253,7 +270,7 @@ form input, form textarea{
   box-sizing: border-box; 
   border: none; 
   color: #525c66; 
-  font-size: 1em;
+  font-size: 2em;
   resize: horizontal; 
 }
 
@@ -265,7 +282,4 @@ form button {
 	font-size: 1em; 
 	color: 	white;
   font-family: "Roboto", sans-serif;
-}
-form button hover{
-	background-color: #046193;
 }
